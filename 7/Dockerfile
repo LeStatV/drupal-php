@@ -13,6 +13,7 @@ USER root
 RUN set -ex; \
     \
     su-exec wodby composer global require drush/drush:^8.0; \
+    su-exec wodby composer global require hirak/prestissimo; \
     \
     # Drush launcher
     drush_launcher_url="https://github.com/drush-ops/drush-launcher/releases/download/${DRUSH_LAUNCHER_VER}/drush.phar"; \
